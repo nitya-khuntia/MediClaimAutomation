@@ -8,33 +8,34 @@ This project includes Flask routes for handling API requests, JWT (JSON Web Toke
 ## Project Structure
 This section outlines the directory layout of the MediClaimAI project, providing an overview of where specific parts of the application are located.
 
-MediClaimAI/
+```plaintext
+MediClaimAutomation/
 │
-├── app/ # Main application folder
-│ ├── init.py # Initializes the Flask app
-│ ├── main/ # Handles core functionalities like predictions
-│ │ ├── init.py # Contains prediction routes and logic
-│ ├── auth/ # Manages user authentication
-│ │ ├── init.py # Setup for authentication routes and JWT configuration
-│ ├── generative_ai/ # For generative AI functionalities
-│ │ ├── init.py # Code to integrate and handle LLM for explanations
+├── app/                            # Main application folder
+│   ├── __init__.py                 # Initializes the Flask app
+│   ├── main/                       # Handles core functionalities like predictions
+│   │   ├── __init__.py             # Contains prediction routes and logic
+│   ├── auth/                       # Manages user authentication
+│   │   ├── __init__.py             # Setup for authentication routes and JWT configuration
+│   ├── generative_ai/              # For generative AI functionalities
+│   │   ├── __init__.py             # Code to integrate and handle LLM for explanations
 │
-├── data/ # Folder for datasets
-│ ├── insurance_data_cleaned.csv # Cleaned dataset for training and predictions
+├── data/                           # Folder for datasets
+│   ├── insurance_data_cleaned.csv  # Cleaned dataset for training and predictions
 │
-├── models/ # For storing ML model files
-│ ├── insurance_claim_pipeline.joblib # Pipeline model file
+├── models/                         # For storing ML model files
+│   ├── insurance_claim_model.joblib  # Trained ML model file
+│   ├── insurance_claim_pipeline.joblib  # Pipeline model file
 │
-├── logs/ # For logging application events
-│ ├── application.log # Log file for the Flask application
+├── logs/                           # For logging application events
+│   ├── application.log             # Log file for the Flask application
 │
-├── scripts/ # code for doing data science stuff, bulding and training the model
-│ ├── claim.py # Script related bulding and training the model
+├── scripts/                        # Additional scripts for tasks like data cleaning
+│   ├── claim.py                    # Script related to claim processing
 │
-├── requirements.txt # Python dependencies for the project
-├── run.py # Entry point for the Flask application
-└── README.md # Project overview, setup instructions, and usage
-
+├── requirements.txt                # Python dependencies for the project
+├── run.py                          # Entry point for the Flask application
+└── README.md                       # Project overview, setup instructions, and usage
 
 ### Explanation of Key Components
 

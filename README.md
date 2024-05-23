@@ -24,8 +24,7 @@ MediClaimAutomation/
 │   ├── insurance_data_cleaned.csv  # Cleaned dataset for training and predictions
 │
 ├── models/                         # For storing ML model files
-│   ├── insurance_claim_model.joblib  # Trained ML model file
-│   ├── insurance_claim_pipeline.joblib  # Pipeline model file
+│   ├── insurance_claim_pipeline.joblib  # Trained ML model file
 │
 ├── logs/                           # For logging application events
 │   ├── application.log             # Log file for the Flask application

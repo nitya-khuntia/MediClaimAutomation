@@ -37,6 +37,8 @@ MediClaimAutomation/
 ├── run.py                          # Entry point for the Flask application
 └── README.md                       # Project overview, setup instructions, and usage
 
+```
+
 ### Explanation of Key Components
 
 - **`app/`**: Contains all Flask application modules including initialization, main functionalities, authentication, and generative AI integrations.
